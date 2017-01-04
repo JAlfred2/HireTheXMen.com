@@ -1,0 +1,6 @@
+<h1>Hire the X-Men!</h1>
+<h2>Cart</h2>
+<h3 ng-repeat="y in cart">{{y.num}} {{y.displayname}} {{y.num * y.rate | currency}}<img width="15px" height="15px" ng-click="remove(y)" ng-src="x.gif" />Remove</h3>
+<h3><strong>TOTAL:  {{total | currency}}</strong></h3>
+<h3>There are {{totes}} items in the cart.</h3>
+<h3><a href="#!/view2">Back</a><a ng-click="checkOut()">Check Out</a></h3>
